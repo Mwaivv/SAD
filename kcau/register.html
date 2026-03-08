@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Portal - Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="/register-handler" method="POST">
+        <p>
+            <label for="reg-fname">First Name:</label><br>
+            <input type="text" id="reg-fname" name="first_name" required>
+        </p>
+        <p>
+            <label for="reg-lname">Last Name:</label><br>
+            <input type="text" id="reg-lname" name="last_name" required>
+        </p>
+        <p>
+            <label for="reg-email">School Email Address:</label><br>
+            <input type="email" id="reg-email" name="email" required>
+        </p>
+        <p>
+            <label for="reg-pass">Create Password:</label><br>
+            <input type="password" id="reg-pass" name="new_password" minlength="8" required>
+        </p>
+        <p>
+            <label for="reg-confirm">Confirm Password:</label><br>
+            <input type="password" id="reg-confirm" name="confirm_password" required>
+        </p>
+        <p>
+            <button type="submit">Register Account</button>
+        </p>
+    
+
+    <p><a href="index.html">Already have an account? Login here</a></p>
+    </form>
+</body>
+</html>

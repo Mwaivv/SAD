@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Portal - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>School Portal Login</h1>
+    <form action="/login-handler" method="POST">
+        <p>
+            <label for="user-id">Student/Staff ID:</label><br>
+            <input type="text" id="user-id" name="username" required>
+        </p>
+        <p>
+            <label for="user-pass">Password:</label><br>
+            <input type="password" id="user-pass" name="password" required>
+        </p>
+        <p>
+            <button type="button" onclick="window.location.href='login.html'">Login</button>
+        </p>
+    
+    
+    <p><a href="forgot.html">Forgot Password?</a></p>
+    <p><a href="register.html">New Student? Create Account</a></p>
+    </form>
+</body>
+</html>

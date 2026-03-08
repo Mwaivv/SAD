@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    min-height: 100vh;
+}
+
+nav {
+    width: 260px;
+    background-color: #003366; 
+    color: white;
+    padding: 30px 20px;
+    position: fixed; 
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+nav p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+nav ul li {
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    color: #e2e8f0;
+    text-decoration: none;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1a4a7a;
+    color: white;
+}
+
+header, section {
+    margin-left: 280px; 
+    padding: 0 40px;
+}
+
+header {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #1e293b;
+    margin: 0;
+}
+
+#live-clock {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    border-collapse: collapse; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: none !important; 
+    margin-bottom: 40px;
+}
+
+th {
+    background-color: #f8fafc;
+    color: #003366;
+    font-size: 1.1rem;
+    padding: 20px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+td {
+    padding: 15px 20px;
+    color: #334155;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+td strong {
+    color: #475569;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+section:last-of-type table td {
+    text-align: center;
+    border-right: 1px solid #f1f5f9;
+}
+
+section:last-of-type table td:last-child {
+    border-right: none;
+}
+
+nav ul li a[href="index.html"] {
+    margin-top: 40px;
+    color: #fca5a5;
+    border: 1px solid rgba(252, 165, 165, 0.3);
+}
+
+nav ul li a[href="index.html"]:hover {
+    background-color: #991b1b;
+    color: white;
+}

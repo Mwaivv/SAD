@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portal - Home</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <nav>
+        <p><strong>STUDENT PORTAL</strong></p>
+        <hr>
+        <ul>
+            <li><a href="dashboard.html">Home (Profile)</a></li>
+            <li><a href="#">Unit Registration</a></li>
+            <li><a href="#">Financial Records</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <header>
+        <h1 id="greeting">Welcome</h1>
+        <p id="live-clock"></p>
+    </header>
+
+    <section>
+        <h2>Official Student Profile</h2>
+        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th colspan="2" align="left">Personal Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Full Name:</strong></td>
+                    <td>John Doe Omondi</td>
+                </tr>
+                <tr>
+                    <td><strong>Admission Number:</strong></td>
+                    <td>KCAU/BIT/2021/01234</td>
+                </tr>
+                <tr>
+                    <td><strong>Gender:</strong></td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td><strong>Date of Birth:</strong></td>
+                    <td>15th May 2002</td>
+                </tr>
+                <tr>
+                    <td><strong>Phone Number:</strong></td>
+                    <td>+254 712 345 678</td>
+                </tr>
+                <tr>
+                    <td><strong>School Email:</strong></td>
+                    <td>j.doe@student.kcau.ac.ke</td>
+                </tr>
+                <tr>
+                    <td><strong>Fee Paid:</strong></td>
+                    <td>KES 75,000.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>Academic Summary</h3>
+        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <tr>
+                <td><strong>School:</strong><br>Technology (SOT)</td>
+                <td><strong>Program:</strong><br>BSc. Software Development</td>
+                <td><strong>Current Year:</strong><br>Year 3 (Sem 1)</td>
+            </tr>
+        </table>
+    </section>
+
+    <script>
+        function updateGreeting() {
+            const now = new Date();
+            const hour = now.getHours();
+            const greeting = document.getElementById('greeting');
+            const clock = document.getElementById('live-clock');
+
+            let message = "Welcome back, John Doe";
+            if (hour < 12) message = "Good Morning, John Doe";
+            else if (hour < 18) message = "Good Afternoon, John Doe";
+            else message = "Good Evening, John Doe";
+
+            greeting.innerText = message;
+            clock.innerText = "Date: " + now.toDateString() + " | Time: " + now.toLocaleTimeString();
+        }
+        updateGreeting();
+        setInterval(updateGreeting, 1000);
+    </script>
+
+</body>
+</html>
